@@ -5,6 +5,6 @@ class Desenvolvedor extends Funcionario {
   int? xp;
   bool? formado;
 
-  Desenvolvedor(String nome, int idade, num salario, String stack, int xp ,bool formado)
-      : super(nome, idade, salario);
+  Desenvolvedor(String nome, int idade, num salario, this.stack , this.xp ,this.formado)
+      : super(nome, idade, salario, );
 }

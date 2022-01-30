@@ -14,9 +14,8 @@ void main() {
   desenvolvedor();
 
   var vendedor = Vendedor('Isabella', 15, 1400, 'rua da solidao');
-  print(vendedor.endereco);
 
-  //vendedor.trabalhar();
+  print(vendedor.endereco);
   dadosVendedor(vendedor);
 }
 
@@ -47,5 +46,4 @@ void dadosVendedor(Vendedor vendedor) {
   print("Salario do vendedor: ${vendedor.salario}");
   print("teste: ${vendedor.estaTrabalhando}");
   print("Endereço do vendedor: ${vendedor.endereco}");
-  
 }
