@@ -1,3 +1,4 @@
+import 'deputado.dart';
 import 'flutterando.dart';
 import 'desenvolvedor.dart';
 import 'vendedor.dart';
@@ -16,6 +17,8 @@ void main() {
   var vendedor = Vendedor('Isabella', 15, 1400, 'rua da solidao');
 
   dadosVendedor(vendedor);
+
+  deputado();
 }
 
 void flutterando(Flutterando flutterando) {
@@ -45,4 +48,22 @@ void dadosVendedor(Vendedor vendedor) {
   print("Salario do vendedor: ${vendedor.salario}");
   print("teste: ${vendedor.estaTrabalhando}");
   print("Endereço do vendedor: ${vendedor.endereco}");
+}
+
+void deputado() {
+  var deputado = Deputado('Alexa', 30, 25000, 2, true, 200000, true);
+  deputado.trabalhar();
+  print('-----------------\n');
+  print('Deputado(a)\n');
+  print('Nome: ${deputado.nome}');
+  print('Idade: ${deputado.idade}');
+  print('Salario: R\$${deputado.salario.toStringAsFixed(2)}');
+  print('Quantidade de Mandatos: ${deputado.qtdMandatos}');
+  print(
+      'Está trabalhando: ${deputado.estaTrabalhando ? 'Está trabalhando' : 'Não está trabalhando'}');
+  print(
+      'É corrupto: ${deputado.eCorrupto ? 'É um politico corrupto' : 'Não é corrupto'}');
+  print('Quantidade de votos nesse mandato: ${deputado.qtdVotosAtualMandato}');
+  print(
+      'Ativo em rede Socias: ${deputado.eAtivoRedeSocial ? 'Bastante ativo em rede social' : 'Não é ativo em rede social'}');
 }
