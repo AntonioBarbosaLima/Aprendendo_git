@@ -1,6 +1,3 @@
-
-
-
 import 'flutterando.dart';
 void main() {
   var cracha = Flutterando("Neto", 18, 3000, );
