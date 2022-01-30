@@ -15,7 +15,6 @@ void main() {
 
   var vendedor = Vendedor('Isabella', 15, 1400, 'rua da solidao');
 
-  print(vendedor.endereco);
   dadosVendedor(vendedor);
 }
 
