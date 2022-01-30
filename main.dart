@@ -1,5 +1,6 @@
 import 'flutterando.dart';
 import 'desenvolvedor.dart';
+import 'vendedor.dart';
 
 void main() {
   var cracha = Flutterando(
@@ -11,6 +12,12 @@ void main() {
 
   flutterando(cracha);
   desenvolvedor();
+
+  var vendedor = Vendedor('Isabella', 15, 1400, 'rua da solidao');
+  print(vendedor.endereco);
+
+  //vendedor.trabalhar();
+  dadosVendedor(vendedor);
 }
 
 void flutterando(Flutterando flutterando) {
@@ -31,4 +38,14 @@ void desenvolvedor() {
   print('Experiencia: ${dev.xp}');
   print("Faz faculdade: ${dev.salario}");
   print("Salario: R\$ ${dev.salario}");
+}
+
+void dadosVendedor(Vendedor vendedor) {
+  print('-----------------\n');
+  print("Nome do vendedor: ${vendedor.nome}");
+  print("Idade do vendedor: ${vendedor.idade}");
+  print("Salario do vendedor: ${vendedor.salario}");
+  print("teste: ${vendedor.estaTrabalhando}");
+  print("Endereço do vendedor: ${vendedor.endereco}");
+  
 }
