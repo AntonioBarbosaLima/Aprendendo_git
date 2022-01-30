@@ -28,6 +28,7 @@ void desenvolvedor() {
   print('Esta trabalhando: ${dev.estaTrabalhando}');
   print('Idade:${dev.idade}');
   print('Stack : ${dev.stack}');
+  print('Experiencia: ${dev.xp}');
   print("Faz faculdade: ${dev.salario}");
   print("Salario: R\$ ${dev.salario}");
 }
